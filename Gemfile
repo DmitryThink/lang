@@ -24,7 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pg'
 
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap'
 
 gem 'jquery-rails'
 
