@@ -24,4 +24,4 @@ production:
   <<: *default
   database: lang
   username: deploy
-  password: <%= ENV['LANG_DATABASE_PASSWORD'] %>
+  password: <%= ENV['WOLNA_DATABASE_PASSWORD'] %>
