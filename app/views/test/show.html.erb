@@ -1,0 +1,32 @@
+<%= form_for @queue_list_item, url: { id: @queue_list.id }  do |f| %>
+  <div class="form-group">
+    <%= f.hidden_field :queue_list_id, :value => @queue_list.id %>
+    <%= f.label @queue_list.language_from.name %> <br>
+    <input class="form-control" id="inputdefault" value="<%= @queue_list_item.translation.word_from.name %>" type="text" disabled>
+  </div>
+  <div class="form-group">
+    <% if @queue_list_item.errors.any? %>
+      <% @queue_list_item.errors.full_messages.each do |msg| %>
+        <p class="text-danger"><%= msg %></p>
+      <% end %>
+    <% else %>
+      <br>
+    <% end %>
+  </div>
+  <div class="form-group">
+    <%= f.fields_for :translation do |ff| %>
+      <%= f.label @queue_list.language_to.name %>
+      <%= ff.text_field :name, class:"form-control input-sm"  %> <br>
+    <% end %>
+    <% if @word.present? %>
+      <input class="form-control" id="inputdefault" value="<%= @word %>" type="text" disabled>
+    <% else %>
+      <input class="form-control" id="inputdefault" value="<%= @queue_list_item.tip %>" type="text" disabled>
+    <% end %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Send", class: "btn btn-primary" %>
+    <%#= link_to("Show world", queue_list_item_show_word_url, method: :get, class: "btn btn-danger") %>
+    <%= link_to("Quit test", queue_list_item_url, method: :delete, class: "btn btn-danger") %>
+  </div>
+<% end %>

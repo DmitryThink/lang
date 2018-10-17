@@ -1,0 +1,20 @@
+<h2>Your tests</h2>
+<% current_user.queue_lists.each_with_index do |queue_list, index| %>
+  <div class="form-group">
+    <a class="btn btn-primary" href="queue_list_items/<%= queue_list.id %>" role="button"> <%= "#{index+1}. #{queue_list.language_from.name} to #{queue_list.language_to.name}" %></a>
+  </div>
+<% end %>
+<br>
+<br>
+<h2>Create new test</h2>
+<%= form_for @queue_list, url: {action: "create"} do |f| %>
+  <div class="form-group">
+    <%= f.collection_select :language_from_id, Language.all, :id, :name, {}, {class: "form-control input-lg"}  %>
+  </div>
+  <div class="form-group">
+    <%= f.collection_select :language_to_id, Language.all, :id, :name, {}, {class: "form-control input-lg"}  %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Choose", class: "btn btn-primary"%>
+  </div>
+<% end %>
