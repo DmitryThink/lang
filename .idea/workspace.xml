@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e36b8e52-4cad-4939-8ef1-a07198feeda0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/index/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/index/list.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/test/error.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/test/show.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="e36b8e52-4cad-4939-8ef1-a07198feeda0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -55,7 +50,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Gemfile" value="7" />
-          <entry key="erb" value="1122" />
+          <entry key="erb" value="1129" />
           <entry key="html" value="11" />
           <entry key="js" value="1" />
           <entry key="rb" value="5058" />
@@ -67,7 +62,7 @@
         <counts>
           <entry key="HTML" value="11" />
           <entry key="JavaScript" value="1" />
-          <entry key="RHTML" value="1122" />
+          <entry key="RHTML" value="1129" />
           <entry key="Ruby" value="5065" />
           <entry key="SCSS" value="23" />
           <entry key="YAML" value="6" />
@@ -234,10 +229,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="911" />
-    <option name="y" value="165" />
-    <option name="width" value="950" />
-    <option name="height" value="810" />
+    <option name="x" value="328" />
+    <option name="y" value="65" />
+    <option name="width" value="1379" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -433,12 +428,12 @@
       <workItem from="1539596389308" duration="6806000" />
       <workItem from="1539613200356" duration="8124000" />
       <workItem from="1539679695506" duration="13195000" />
-      <workItem from="1539775973389" duration="10916000" />
+      <workItem from="1539775973389" duration="12176000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39041000" />
+    <option name="totallyTimeSpent" value="40301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />

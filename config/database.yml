@@ -12,9 +12,16 @@ default: &default
   pool: 5
   timeout: 5000
 
-  username: postgres
-  password: postgres
+
 
 development:
   <<: *default
+  username: postgres
+  password: postgres
   database: lang
+
+production:
+  <<: *default
+  database: lang
+  username: deploy
+  password: <%= ENV['LANG_DATABASE_PASSWORD'] %>
