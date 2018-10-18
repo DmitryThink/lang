@@ -2,9 +2,9 @@
 <% current_user.queue_lists.each_with_index do |queue_list, index| %>
   <div class="form-group">
     <a class="btn btn-primary" href="queue_list_items/<%= queue_list.id %>" role="button"> <%= "#{index+1}. #{queue_list.language_from.name} to #{queue_list.language_to.name}" %></a>
+    <%= link_to("Delete test", queue_list_url(queue_list), method: :delete, class: "btn btn-danger") %>
   </div>
 <% end %>
-<br>
 <br>
 <h2>Create new test</h2>
 <%= form_for @queue_list, url: {action: "create"} do |f| %>

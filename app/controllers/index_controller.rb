@@ -13,6 +13,11 @@ class IndexController < ApplicationController
     redirect_to "/queue_list_items/#{@queue_list.id}"
   end
 
+  def destroy
+    QueueList.find(params[:id]).destroy!
+    redirect_to '/'
+  end
+
   private
 
   def queue_list_params

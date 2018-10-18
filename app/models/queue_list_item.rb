@@ -8,6 +8,7 @@ class QueueListItem < ApplicationRecord
   after_save :set_time_of_appearance, if: :saved_change_to_index_of_time?
 
   validates :translation, uniqueness: { scope: :queue_list }
+  validates :index_of_time, :inclusion => -2..10
 
   def tip
     if queue_list.with_first_letter

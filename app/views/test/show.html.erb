@@ -18,15 +18,15 @@
       <%= f.label @queue_list.language_to.name %>
       <%= ff.text_field :name, class:"form-control input-sm"  %> <br>
     <% end %>
-    <% if @word.present? %>
-      <input class="form-control" id="inputdefault" value="<%= @word %>" type="text" disabled>
+    <% if @queue_list_item.word_show %>
+      <input class="form-control" id="inputdefault" value="<%= @queue_list_item.word_to.name %>" type="text" disabled>
     <% else %>
       <input class="form-control" id="inputdefault" value="<%= @queue_list_item.tip %>" type="text" disabled>
     <% end %>
   </div>
   <div class="form-group">
     <%= f.submit "Send", class: "btn btn-primary" %>
-    <%#= link_to("Show world", queue_list_item_show_word_url, method: :get, class: "btn btn-danger") %>
-    <%= link_to("Quit test", queue_list_item_url, method: :delete, class: "btn btn-danger") %>
+    <%= link_to("Show world", queue_list_item_show_word_url(@queue_list,  @queue_list_item), action: 'show_word', class: "btn btn-danger") %>
+    <%= link_to("Quit test", queue_list_item_url(@queue_list,  @queue_list_item), method: :delete, class: "btn btn-danger") %>
   </div>
 <% end %>

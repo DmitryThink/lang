@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root "index#index"
 
-  resources :queue_lists, only: [ :index, :create, :update ], :controller => :index
+  resources :queue_lists, only: [ :index, :create, :update,:destroy ], :controller => :index
   resources :queue_list_items, only: [:show, :update, :destroy ], :controller => :test do
     get :show_word
   end

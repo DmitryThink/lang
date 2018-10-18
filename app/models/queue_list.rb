@@ -19,7 +19,7 @@ class QueueList < ApplicationRecord
   end
 
   def push_items
-    Translation.where(language_from: language_from, language_to: language_to).first(50).each do |translation|
+    Translation.where(language_from: language_from, language_to: language_to).shuffle.first(50).each do |translation|
       QueueListItem.create!(translation: translation, queue_list: self)
     end
   end

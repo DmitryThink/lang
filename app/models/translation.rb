@@ -5,4 +5,6 @@ class Translation < ApplicationRecord
   belongs_to :word_to, :class_name => "Word"
   has_many :queue_list_items
   has_many :translations, through: :queue_list_items
+
+  validates :word_to, presence: true, uniqueness: { scope: :word_from }
 end

@@ -15,7 +15,7 @@ class TestController < ApplicationController
     if @queue_list_item.word_to.name.downcase != word.downcase
       if @queue_list_item.index_of_time > 0
         @queue_list_item.index_of_time = 0
-      elsif @queue_list_item.index_of_time > -4
+      elsif @queue_list_item.index_of_time > -2
         @queue_list_item.index_of_time -= 1
       end
       @queue_list_item.save!
@@ -24,6 +24,7 @@ class TestController < ApplicationController
     else
       begin
         @queue_list_item.index_of_time += 1
+        @queue_list_item.word_show = false
         @queue_list_item.save!
         @queue_list.update_items
         @queue_list.reload
@@ -41,8 +42,12 @@ class TestController < ApplicationController
   def show_word
     @queue_list = current_user.current_queue_list
     @queue_list_item = @queue_list.current_queue_list_item
-    @word = @queue_list_item.word_to.name
-    render :show
+    if !@queue_list_item.word_show && @queue_list_item.index_of_time > -2
+      @queue_list_item.index_of_time -= 1
+    end
+    @queue_list_item.word_show = !@queue_list_item.word_show
+    @queue_list_item.save!
+    redirect_to '/'
   end
 
   def destroy

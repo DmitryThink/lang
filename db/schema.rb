@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_17_132646) do
+ActiveRecord::Schema.define(version: 2018_10_18_102505) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2018_10_17_132646) do
     t.datetime "updated_at", null: false
     t.datetime "time_of_appearance"
     t.integer "index_of_time", default: 0
+    t.boolean "word_show"
     t.index ["translation_id"], name: "index_queue_list_items_on_translation_id"
   end
 
