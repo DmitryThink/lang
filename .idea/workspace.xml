@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36b8e52-4cad-4939-8ef1-a07198feeda0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lang.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/index_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/index_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/test_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/test_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/queue_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/queue_list.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/queue_list_item.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/queue_list_item.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/translation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/translation.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/index/list.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index/list.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/test/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/test/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -70,7 +59,7 @@
           <entry key="erb" value="1281" />
           <entry key="html" value="11" />
           <entry key="js" value="1" />
-          <entry key="rb" value="5511" />
+          <entry key="rb" value="5595" />
           <entry key="scss" value="23" />
           <entry key="yml" value="45" />
         </counts>
@@ -80,7 +69,7 @@
           <entry key="HTML" value="11" />
           <entry key="JavaScript" value="1" />
           <entry key="RHTML" value="1281" />
-          <entry key="Ruby" value="5520" />
+          <entry key="Ruby" value="5604" />
           <entry key="SCSS" value="23" />
           <entry key="YAML" value="45" />
         </counts>
@@ -93,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/queue_list.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -134,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/queue_list_item.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="480">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -152,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/test_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="345">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -237,8 +226,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/index/list.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/index_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/queue_list_item.rb" />
         <option value="$PROJECT_DIR$/app/controllers/test_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/queue_list_item.rb" />
       </list>
     </option>
   </component>
@@ -454,12 +443,12 @@
       <workItem from="1539775973389" duration="12176000" />
       <workItem from="1539791377428" duration="539000" />
       <workItem from="1539804493400" duration="2761000" />
-      <workItem from="1539850622130" duration="6197000" />
+      <workItem from="1539850622130" duration="6760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49798000" />
+    <option name="totallyTimeSpent" value="50361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1208" height="1082" extended-state="4" />
@@ -776,17 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/queue_list_item.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/queue_list.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -799,8 +781,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/test_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="345">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/queue_list_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
