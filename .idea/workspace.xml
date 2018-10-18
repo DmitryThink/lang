@@ -59,7 +59,7 @@
           <entry key="erb" value="1281" />
           <entry key="html" value="11" />
           <entry key="js" value="1" />
-          <entry key="rb" value="5595" />
+          <entry key="rb" value="5606" />
           <entry key="scss" value="23" />
           <entry key="yml" value="45" />
         </counts>
@@ -69,7 +69,7 @@
           <entry key="HTML" value="11" />
           <entry key="JavaScript" value="1" />
           <entry key="RHTML" value="1281" />
-          <entry key="Ruby" value="5604" />
+          <entry key="Ruby" value="5615" />
           <entry key="SCSS" value="23" />
           <entry key="YAML" value="45" />
         </counts>
@@ -126,8 +126,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/queue_list_item.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="150">
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -145,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/test_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -178,6 +178,7 @@
       <find>config.secret_key</find>
       <find>au</find>
       <find>whe</find>
+      <find>.list_of_time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -443,12 +444,12 @@
       <workItem from="1539775973389" duration="12176000" />
       <workItem from="1539791377428" duration="539000" />
       <workItem from="1539804493400" duration="2761000" />
-      <workItem from="1539850622130" duration="6760000" />
+      <workItem from="1539850622130" duration="7491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50361000" />
+    <option name="totallyTimeSpent" value="51092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1208" height="1082" extended-state="4" />
@@ -782,14 +783,14 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/test_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/queue_list_item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="150">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
         </state>
       </provider>
     </entry>
