@@ -1,0 +1,19 @@
+<% @queue_list.queue_list_items.each do |queue_list_item| %>
+  <p><%= queue_list_item.translate.word_from.name %> -> <%= queue_list_item.translate.word_to.name %></p>
+<% end %>
+
+<%= form_for @translation, url: { id: 'id' }  do |f| %>
+  <div class="form-group">
+    <%= f.fields_for :word_from do |ff| %>
+      <%= ff.label 'word_from' %>
+      <%= ff.text_field :name, class:"form-control input-sm" %>
+    <% end %>
+    <%= f.fields_for :word_to do |ff| %>
+      <%= ff.label 'word_to' %>
+      <%= ff.text_field :name, class:"form-control input-sm" %>
+    <% end %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Add", class: "btn btn-primary" %>
+  </div>
+<% end %>

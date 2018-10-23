@@ -16,3 +16,5 @@
 //= require jquery3
 //= require bootstrap
 //= require_tree .
+//
+$("queue_list_item_translation_name").focus();

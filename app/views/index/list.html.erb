@@ -1,20 +1,27 @@
-<h2>Your tests</h2>
-<% current_user.queue_lists.each_with_index do |queue_list, index| %>
-  <div class="form-group">
-    <a class="btn btn-primary" href="queue_list_items/<%= queue_list.id %>" role="button"> <%= "#{index+1}. #{queue_list.language_from.name} to #{queue_list.language_to.name}" %></a>
-    <%= link_to("Delete test", queue_list_url(queue_list), method: :delete, class: "btn btn-danger") %>
+<div id="container">
+  <h1>&bull; Lang &bull;</h1>
+  <div class="underline">
   </div>
-<% end %>
-<br>
-<h2>Create new test</h2>
-<%= form_for @queue_list, url: {action: "create"} do |f| %>
-  <div class="form-group">
-    <%= f.collection_select :language_from_id, Language.all, :id, :name, {}, {class: "form-control input-lg"}  %>
-  </div>
-  <div class="form-group">
-    <%= f.collection_select :language_to_id, Language.all, :id, :name, {}, {class: "form-control input-lg"}  %>
-  </div>
-  <div class="form-group">
-    <%= f.submit "Choose", class: "btn btn-primary"%>
-  </div>
-<% end %>
+  <%= form_for @queue_list, url: {action: "create"}, id: "contact_form" do |f| %>
+    <h2>Your tests</h2>
+    <% current_user.queue_lists.each_with_index do |queue_list, index| %>
+      <div class="form-group">
+        <button id="list_button" href="queue_list_items/<%= queue_list.id %>" role="button"> <%= "#{index+1}. #{queue_list.language_from.name} to #{queue_list.language_to.name}" %></button>
+        <%= link_to("X", queue_list_url(queue_list), method: :delete, id: "delete_button") %>
+      </div>
+    <% end %>
+    <h2>Choose languages</h2>
+    <div class="subject">
+      <label for="subject"></label>
+      <%= f.collection_select :language_from_id, Language.all, :id, :name, {}, {class: "form-control input-lg"}  %>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <%= f.collection_select :language_to_id, Language.all.reverse_order, :id, :name, {}, {class: "form-control input-lg"}  %>
+
+    </div>
+    <div class="submit">
+      <%= f.submit "Choose", class: "btn btn-primary", id:"form_button" %>
+    </div>
+    <% end %><!-- // End form -->
+</div><!-- // End #container -->

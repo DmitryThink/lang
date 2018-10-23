@@ -1,4 +1,8 @@
-<%= form_for @queue_list_item, url: { id: @queue_list.id }  do |f| %>
+<div id="container">
+  <h1>&bull; Lang &bull;</h1>
+  <div class="underline">
+  </div>
+<%= form_for @queue_list_item, url: { id: @queue_list.id } do |f| %>
   <div class="form-group">
     <%= f.hidden_field :queue_list_id, :value => @queue_list.id %>
     <%= f.label @queue_list.language_from.name %> <br>
@@ -16,7 +20,7 @@
   <div class="form-group">
     <%= f.fields_for :translation do |ff| %>
       <%= f.label @queue_list.language_to.name %>
-      <%= ff.text_field :name, class:"form-control input-sm"  %> <br>
+      <%= ff.text_field :name, class:"form-control input-sm", onblur: "this.focus()", autofocus: true  %> <br>
     <% end %>
     <% if @queue_list_item.word_show %>
       <input class="form-control" id="inputdefault" value="<%= @queue_list_item.word_to.name %>" type="text" disabled>
@@ -25,8 +29,9 @@
     <% end %>
   </div>
   <div class="form-group">
-    <%= f.submit "Send", class: "btn btn-primary" %>
-    <%= link_to("Show world", queue_list_item_show_word_url(@queue_list,  @queue_list_item), action: 'show_word', class: "btn btn-danger") %>
-    <%= link_to("Quit test", queue_list_item_url(@queue_list,  @queue_list_item), method: :delete, class: "btn btn-danger") %>
+    <%= f.submit "Send", class: "btn btn-primary", id:"form_button" %>
+    <%= link_to("Show world", queue_list_item_show_word_url(@queue_list,  @queue_list_item), action: 'show_word', class: "btn btn-danger", id: "delete_button") %>
+    <%= link_to("Quit test", queue_list_item_url(@queue_list,  @queue_list_item), method: :delete, class: "btn btn-danger", id: "delete_button") %>
   </div>
 <% end %>
+</div>

@@ -33,7 +33,8 @@ class TestController < ApplicationController
         end
         @queue_list.update!(current_queue_list_item: @queue_list_item)
         render :show
-      rescue
+      rescue => e
+        byebug
         render :error
       end
     end
