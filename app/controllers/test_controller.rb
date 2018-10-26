@@ -1,5 +1,4 @@
 class TestController < ApplicationController
-  # before_action :set_queue_list
   def show
     set_queue_list
     set_current_translation
@@ -33,8 +32,7 @@ class TestController < ApplicationController
         end
         @queue_list.update!(current_queue_list_item: @queue_list_item)
         render :show
-      rescue => e
-        byebug
+      rescue
         render :error
       end
     end
@@ -45,6 +43,8 @@ class TestController < ApplicationController
     @queue_list_item = @queue_list.current_queue_list_item
     if !@queue_list_item.word_show && @queue_list_item.index_of_time > -2
       @queue_list_item.index_of_time -= 1
+    elsif !@queue_list_item.word_show && @queue_list_item.index_of_time > 0
+      @queue_list_item.index_of_time = 0
     end
     @queue_list_item.word_show = !@queue_list_item.word_show
     @queue_list_item.save!
